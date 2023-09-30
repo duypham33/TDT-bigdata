@@ -1,0 +1,19 @@
+
+
+parse .csvs:
+
+-clean,reduce:
+airports: select US, Canada airports + type=='airport': select id, name, city, country, IATA, ICAO
+airlines: select US, Canada: select id, name,IATA, ICAO, country, active = codeshare
+
+routes: stops=0 (filtered = 0 since most of ) + check in US, Canada (programming to filter), 
+
+[airport_ids in country == US, Canada] 
+[airline_ids in country == US, Canada] 
+
+
+-insert to neo4j (model first):
+
+[node: airport {id, name, city, country, IATA, ICAO}]
+[node: airline {id, name,IATA, ICAO, country, active}]
+[node: airport] - [:route {airline, airlineid, codeshare}] -> [node: airport]
