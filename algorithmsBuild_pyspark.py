@@ -74,11 +74,14 @@ def read_TopKCities_w_MostAirlines_pySpark(spark, output):
     # Collect and print the results
     results = city_airlines_df.collect()
 
-    for row in results:
-        city = row["City"]
-        airlines = sorted(row["Airlines"])  # Convert back to list
-        num_of_airlines = row["numofAirlines"]
-        print(f"{city}, {airlines}, {num_of_airlines}")
+    #for row in results:
+    #    city = row["City"]
+    #    airlines = sorted(row["Airlines"])  # Convert back to list
+    #    num_of_airlines = row["numofAirlines"]
+    #    print(f"{city}, {airlines}, {num_of_airlines}")
+
+    # Show the result on the screen
+    city_airlines_df.show()
 
     # Save the results to a CSV file
     #city_airlines_df.write.csv(output, header=True, mode="overwrite")
@@ -90,12 +93,11 @@ def read_TopKCities_w_MostAirlines_pySpark(spark, output):
 # Create a Spark session
 spark = SparkSession.builder.appName("Scala").getOrCreate()
 
-# Specify the output CSV path
-output = "scala_output"
+# Specify the output Json path
+output = "output_topcities"
 
 # Call the function
 read_TopKCities_w_MostAirlines_pySpark(spark, output)
 
 # Stop the Spark session
 spark.stop()
-
