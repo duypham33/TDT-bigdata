@@ -25,6 +25,9 @@ app=FastAPI()
 def default():
     return {"reponse": "you are in the root path"}
 
+################
+#AIRPORT SEARCH#
+################
 @app.get("/airportSearch/read_TopCountry_w_HighestAirports")
 def read_TopCountry_w_HighestAirports():
     driver_neo4j=connection()
@@ -55,7 +58,31 @@ def read_TopCountry_w_HighestAirports():
     data=[{"Top_Country":top_country, "Num":highest_airports}]
     return data
 
+#example: http://127.0.0.1:8081/airportSearch/read_List_Of_Airports_In_Country?country=United%20States
+@app.post("/airportSearch/read_List_Of_Airports_In_Country")
+def read_List_Of_Airports_In_Country(country):
+    driver_neo4j=connection()
+    session=driver_neo4j.session()
 
+    query="""
+    match (p:Airport) 
+    where p.country = $Country 
+    return p.name limit 10
+    """
+    search={"Country": country}
+    records=session.run(query, search)
+
+    flat_list = [item for sublist in records for item in sublist]
+    
+    data=[{"Country":country, "List_of_Airports": flat_list}]
+    return data
+
+
+
+################
+#AIRLINE SEARCH#
+################
+#example: http://127.0.0.1:8081/airlineSearch/read_TopKCities_w_MostAirlines2
 @app.get("/airlineSearch/read_TopKCities_w_MostAirlines2")
 def read_TopKCities_w_MostAirlines2():
 
@@ -111,43 +138,38 @@ def read_TopKCities_w_MostAirlines2():
 
     return data
 
-
-@app.get("/airportSearch/read_TopCountry_w_HighestAirports")
-def read_TopCountry_w_HighestAirports():
+#example: http://127.0.0.1:8081/airportSearch/read_List_Of_Routes_by_Airline?airline_name=WN
+@app.post("/airportSearch/read_List_Of_Routes_by_Airline")
+def read_List_Of_Routes_by_Airline(airline_name):
     driver_neo4j=connection()
     session=driver_neo4j.session()
-    ll = {}
-    q1="""
-    MATCH (p:Airport)
-    RETURN p.airport_id as Airport_ID, p.country AS Country
+
+    query="""
+    match p=(s:Airport)-[r:Route]-(d: Airport) 
+    where r.airline_name = $Airline_Name
+    return s.name as src, s.city as src_city, d.name as dest, d.city as dest_city limit 10
     """
-    #x={"Airport_ID":airport_id, "Country": country}
-    records=session.run(q1)
-
-    for record in records: 
-        #print(record.data())
-        #airport_id = record.data()['Airport_ID']
-        airport_id = record['Airport_ID']
-        #country = record.data()['Country']
-        country = record['Country']
-
-        if country not in ll.keys():
-            ll[country] = [airport_id]
-        elif airport_id not in ll[country]:
-            ll[country].append(id)   
-    top_country = max(ll, key=lambda x: len(ll[x]))
-    highest_airports = len(ll[top_country])
-    print(f"{top_country}: {highest_airports}")  
+    search={"Airline_Name": airline_name}
+    records=session.run(query, search)
     
-    data=[{"Top_Country":top_country, "Num":highest_airports}]
+    summary = []
+    for src, src_city, dest, dest_city in records:
+        route = "Flight Information: From " + src + " of city " + src_city + " to " + dest + " of city " + dest_city
+        summary.append(route)
+    
+    data=[{"Airline":airline_name, "List_of_Flights": summary}]
     return data
 
+
+#####################
+#TRIP RECOMMENDATION#
+#####################
 #example: http://127.0.0.1:8081/tripRecommendation/findATripWithDHops?srcCity=Seattle&dstCity=Las%20Vegas&dHops=10
 @app.post("/tripRecommendation/findATripWithDHops")
 def findATripWithDHops():
-    srcCity = "Seattle"
-    dstCity = "Las Vegas"
-    dHops = 10
+    #srcCity = "Seattle"
+    #dstCity = "Las Vegas"
+    #dHops = 10
     driver_neo4j=connection()
     session=driver_neo4j.session()
 
