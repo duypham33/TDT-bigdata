@@ -1,3 +1,7 @@
+#source: https://github.com/ronidas39/NEO4J_PYTHON/blob/main/tutorial106/main.py
+#how to run:
+#python main.py
+#uvicorn main:app --port 8081
 from fastapi import FastAPI
 import os
 from neo4j import GraphDatabase
@@ -21,7 +25,7 @@ app=FastAPI()
 def default():
     return {"reponse": "you are in the root path"}
 
-@app.get("/read_TopCountry_w_HighestAirports")
+@app.get("/airportSearch/read_TopCountry_w_HighestAirports")
 def read_TopCountry_w_HighestAirports():
     driver_neo4j=connection()
     session=driver_neo4j.session()
@@ -52,7 +56,7 @@ def read_TopCountry_w_HighestAirports():
     return data
 
 
-@app.get("/read_TopKCities_w_MostAirlines2")
+@app.get("/airlineSearch/read_TopKCities_w_MostAirlines2")
 def read_TopKCities_w_MostAirlines2():
 
     driver_neo4j=connection()
@@ -108,5 +112,201 @@ def read_TopKCities_w_MostAirlines2():
     return data
 
 
+@app.get("/airportSearch/read_TopCountry_w_HighestAirports")
+def read_TopCountry_w_HighestAirports():
+    driver_neo4j=connection()
+    session=driver_neo4j.session()
+    ll = {}
+    q1="""
+    MATCH (p:Airport)
+    RETURN p.airport_id as Airport_ID, p.country AS Country
+    """
+    #x={"Airport_ID":airport_id, "Country": country}
+    records=session.run(q1)
 
- 
+    for record in records: 
+        #print(record.data())
+        #airport_id = record.data()['Airport_ID']
+        airport_id = record['Airport_ID']
+        #country = record.data()['Country']
+        country = record['Country']
+
+        if country not in ll.keys():
+            ll[country] = [airport_id]
+        elif airport_id not in ll[country]:
+            ll[country].append(id)   
+    top_country = max(ll, key=lambda x: len(ll[x]))
+    highest_airports = len(ll[top_country])
+    print(f"{top_country}: {highest_airports}")  
+    
+    data=[{"Top_Country":top_country, "Num":highest_airports}]
+    return data
+
+#example: http://127.0.0.1:8081/tripRecommendation/findATripWithDHops?srcCity=Seattle&dstCity=Las%20Vegas&dHops=10
+@app.post("/tripRecommendation/findATripWithDHops")
+def findATripWithDHops():
+    srcCity = "Seattle"
+    dstCity = "Las Vegas"
+    dHops = 10
+    driver_neo4j=connection()
+    session=driver_neo4j.session()
+
+    trip_query="MATCH p=(s:Airport)-->{1," + str(dHops) + "}(d:Airport) WHERE s.city = $src and d.city = $dst RETURN relationships(p), nodes(p) limit 1"
+    search={"src":srcCity,"dst":dstCity}
+    #search={"dHopsRelation":dHops_Value,"src":srcCity,"dst":dstCity}
+    records=session.run(trip_query, search)
+
+    trips = []
+    for record in records:
+        routes = record['relationships(p)']
+        nodes = record['nodes(p)']
+        
+        path = []
+        for i in range(len(routes)):
+            src, dst, route = nodes[i], nodes[i + 1], routes[i]
+            airline = route.get("airline_name")
+            dept = src.get("IATA") + ", " + src.get("city")
+            dest = dst.get("IATA") + ", " + dst.get("city")
+            path.append(f"{airline} airline: {dept}  to  {dest}")
+        
+        trips.append(path)
+    
+    for t in trips:
+        print('Trip: ', t)  
+    
+    data=[{"Trip": trips}]
+    return data
+
+#example: http://127.0.0.1:8081/tripRecommendation/findCitiesWithDHops?srcCity=Seattle&dHops=2
+@app.post("/tripRecommendation/findCitiesWithDHops")
+def findCitiesWithDHops(srcCity, dHops):
+    #srcCity = "Seattle"
+    #dHops = 2
+    driver_neo4j=connection()
+    session=driver_neo4j.session()
+
+    city_query = "match p=(s:Airport)-->{1," + str(dHops) + "}(dst: Airport) where s.city = $src return distinct dst.city order by dst.city"
+    search={"src":srcCity}
+    records=session.run(city_query, search)
+
+    cities = list(map(lambda r: r.get('dst.city'), records))
+    
+    print(f"{len(cities)} cities found: ")
+    print(cities)
+    
+    data=[{"Total_cities_found": len(cities), "Cities": cities}]
+    return data
+
+######################################
+#FIND A TRIP THAT CONNECTS TWO CITIES#
+######################################
+def findAdjacentAirportNodesOfCity(city):
+    driver_neo4j=connection()
+    session=driver_neo4j.session()
+
+    query = 'match (s:Airport)-->(d: Airport) where s.city = $city return d'
+    search={"city":city}
+    records=session.run(query, search)
+    return list(map(lambda r: r['d'], records))
+
+def findAdjacentAirportNodes(airportNode):
+    driver_neo4j=connection()
+    session=driver_neo4j.session()
+
+    query = 'match (s:Airport)-->(d: Airport) where s.airport_id = $airport_id return d'
+    search={"airport_id":airportNode.get("airport_id")}
+    records=session.run(query, search)
+    return list(map(lambda r: r['d'], records))
+
+def findAirportNodeOfCity(city, airportNode):
+    driver_neo4j=connection()
+    session=driver_neo4j.session()
+    
+    query = 'match p=(s:Airport)-->(d: Airport) where s.city = $city and d.airport_id = $airport_id return s'
+    search={"city":city, "airport_id":airportNode["airport_id"]}
+    records=session.run(query, search)
+    
+    # Check if there are any records
+    if records:
+        # Access the first record, if available
+        for record in records:
+            result = record['s']
+            return result
+
+    return None  # Return None if no matching record is found
+
+
+def findRouteBetweenAirports(src, dst):
+    driver_neo4j=connection()
+    session=driver_neo4j.session()
+    
+    query = 'match p=(s:Airport)-->(d: Airport) where s.airport_id = $src and d.airport_id = $dst return relationships(p)'
+    search={"src":src.get("airport_id"), "dst":dst.get("airport_id")}
+    records=session.run(query, search)
+    #return records[0]['relationships(p)'][0]
+
+    # Check if there are any records
+    for record in records:
+        subrecord = record['relationships(p)']
+        for result in subrecord:
+            return result
+
+    return None  # Return None if no matching record is found
+
+def bfs(src, dst):
+    queue = findAdjacentAirportNodesOfCity(src)
+    firstChecks = [d for d in queue if d["city"] == dst]
+    if len(firstChecks) > 0:
+        lastNode = {"cur": firstChecks[0], "prev": None}
+    else:
+        queue = list(map(lambda airport: {"cur": airport, "prev": None}, queue))
+        visited = set()
+        
+        lastNode = None
+        while len(queue) > 0:
+            top = queue.pop(0)
+            curNode = top.get("cur")
+            if curNode.get("airport_id") not in visited:
+                if curNode.get("city") == dst:
+                    lastNode = top
+                    break
+                
+                visited.add(curNode.get("airport_id"))
+                for adj in findAdjacentAirportNodes(curNode):
+                    if curNode.get("city") == src:
+                        continue
+                    if adj.get("airport_id") not in visited:
+                        queue.append({"cur": adj, "prev": top})
+        
+    nodes = []
+    while lastNode is not None:
+        nodes.insert(0, lastNode["cur"])
+        lastNode = lastNode["prev"]
+    
+    if len(nodes) > 0:
+        nodes.insert(0, findAirportNodeOfCity(src, nodes[0]))
+    # print(nodes)
+    
+    path = []
+    for i in range(len(nodes) - 1):
+        src, dst = nodes[i], nodes[i + 1]
+        route = findRouteBetweenAirports(src, dst)
+        airline = route.get("airline_name")
+        dept = src.get("IATA") + ", " + src.get("city")
+        dest = dst.get("IATA") + ", " + dst.get("city")
+        path.append(f"{airline} airline: {dept}  to  {dest}")
+        #print(f"{airline} airline: {dept}  to  {dest}")
+    return path
+
+#print(bfs("Seattle", "Masset"))
+
+#example: http://127.0.0.1:8081/tripRecommendation/findATrip?srcCity=Seattle&dstCity=Masset
+@app.post("/tripRecommendation/findATrip")
+def findATrip(srcCity, dstCity):
+    result = bfs(srcCity, dstCity)
+    data=[{"Trip_Search": result}]
+    return data
+
+
+
+        
