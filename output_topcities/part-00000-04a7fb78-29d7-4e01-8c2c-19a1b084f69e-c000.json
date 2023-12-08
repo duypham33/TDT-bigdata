@@ -1,0 +1,577 @@
+{"City":"Los Angeles","Airlines":["AC","4B","VX","HA","FL","WS","WN","UA","US","NK","DL","ZK","B6","G4","AA","SY","F9"],"numofAirlines":17}
+{"City":"Las Vegas","Airlines":["AC","4B","VX","FL","WS","WN","UA","US","NK","G4","DL","B6","F9","HA","AA","SY"],"numofAirlines":16}
+{"City":"San Diego","Airlines":["AC","VX","HA","FL","WS","WN","UA","US","NK","DL","K5","B6","F9","G4","AA","SY"],"numofAirlines":16}
+{"City":"New York","Airlines":["AC","VX","FL","WS","WN","UA","US","NK","DL","9E","B6","F9","HA","AA","SY"],"numofAirlines":15}
+{"City":"Phoenix","Airlines":["AC","FL","WS","WN","UA","US","NK","DL","B6","ZK","HA","AA","SY","F9"],"numofAirlines":14}
+{"City":"Chicago","Airlines":["AC","VX","FL","PD","WS","WN","UA","US","NK","DL","B6","F9","AA","SY"],"numofAirlines":14}
+{"City":"Orlando","Airlines":["AC","VX","FL","WS","WN","UA","US","TS","NK","DL","B6","F9","AA","SY"],"numofAirlines":14}
+{"City":"Boston","Airlines":["AC","VX","FL","PD","WN","UA","US","NK","DL","B6","9K","AA","SY","KS"],"numofAirlines":14}
+{"City":"Fort Lauderdale","Airlines":["AC","VX","FL","WS","WN","UA","US","TS","NK","DL","B6","F9","G4","AA"],"numofAirlines":14}
+{"City":"San Francisco","Airlines":["AC","VX","FL","WS","WN","UA","US","DL","B6","F9","HA","AA","SY"],"numofAirlines":13}
+{"City":"Dallas-Fort Worth","Airlines":["AC","VX","FL","WS","WN","UA","US","NK","DL","B6","F9","AA","SY"],"numofAirlines":13}
+{"City":"Minneapolis","Airlines":["AC","FL","WS","WN","UA","US","NK","DL","9E","ZK","F9","AA","SY"],"numofAirlines":13}
+{"City":"Washington","Airlines":["AC","LW","VX","FL","PD","WN","UA","US","DL","B6","F9","AA","SY"],"numofAirlines":13}
+{"City":"Seattle","Airlines":["AC","VX","FL","WN","UA","US","M5","DL","B6","F9","HA","AA","SY"],"numofAirlines":13}
+{"City":"Portland","Airlines":["AC","VX","FL","WN","UA","US","NK","DL","K5","B6","F9","HA","AA"],"numofAirlines":13}
+{"City":"Detroit","Airlines":["AC","FL","WS","WN","UA","US","NK","DL","9E","B6","F9","AA"],"numofAirlines":12}
+{"City":"Fort Myers","Airlines":["AC","FL","WS","WN","UA","US","NK","DL","B6","F9","AA","SY"],"numofAirlines":12}
+{"City":"New Orleans","Airlines":["AC","FL","WS","WN","UA","US","NK","DL","9E","B6","F9","AA"],"numofAirlines":12}
+{"City":"Vancouver","Airlines":["AC","4N","JB","WS","UA","US","TS","DL","8P","AA","BH"],"numofAirlines":11}
+{"City":"Edmonton","Airlines":["4N","AC","J3","WS","UA","US","TS","DL","7F","AA","5T"],"numofAirlines":11}
+{"City":"Houston","Airlines":["AC","LW","FL","WN","UA","US","NK","DL","B6","F9","AA"],"numofAirlines":11}
+{"City":"Denver","Airlines":["AC","FL","WN","UA","US","NK","DL","B6","F9","ZK","AA"],"numofAirlines":11}
+{"City":"Atlanta","Airlines":["AC","FL","WS","WN","UA","US","NK","DL","9E","F9","AA"],"numofAirlines":11}
+{"City":"Tampa","Airlines":["AC","FL","WS","WN","UA","US","NK","DL","B6","F9","AA"],"numofAirlines":11}
+{"City":"Ottawa","Airlines":["AC","4N","PD","WS","UA","US","DL","7F","AA","5T"],"numofAirlines":10}
+{"City":"Newark","Airlines":["AC","VX","FL","PD","WN","UA","US","DL","B6","AA"],"numofAirlines":10}
+{"City":"Philadelphia","Airlines":["AC","VX","FL","WN","UA","US","NK","DL","B6","AA"],"numofAirlines":10}
+{"City":"Austin","Airlines":["VX","FL","WN","UA","US","DL","B6","F9","G4","AA"],"numofAirlines":10}
+{"City":"Montreal","Airlines":["AC","PD","WS","UA","US","TS","DL","7F","AA"],"numofAirlines":9}
+{"City":"Charlotte","Airlines":["AC","FL","WN","UA","US","DL","B6","F9","AA"],"numofAirlines":9}
+{"City":"Honolulu","Airlines":["AC","WP","HA","WS","UA","US","DL","G4","AA"],"numofAirlines":9}
+{"City":"Cincinnati","Airlines":["AC","WS","UA","US","DL","9E","F9","G4","AA"],"numofAirlines":9}
+{"City":"St. Louis","Airlines":["AC","FL","WN","UA","US","DL","9K","F9","AA"],"numofAirlines":9}
+{"City":"Rochester","Airlines":["AC","FL","WN","UA","US","DL","B6","G4","AA"],"numofAirlines":9}
+{"City":"Raleigh-durham","Airlines":["AC","FL","WN","UA","US","DL","B6","F9","AA"],"numofAirlines":9}
+{"City":"Kansas City","Airlines":["AC","FL","WN","UA","US","DL","K5","F9","AA"],"numofAirlines":9}
+{"City":"Baltimore","Airlines":["AC","FL","WN","UA","US","NK","DL","B6","AA"],"numofAirlines":9}
+{"City":"Nashville","Airlines":["AC","FL","WN","UA","US","DL","K5","F9","AA"],"numofAirlines":9}
+{"City":"Charleston","Airlines":["FL","WN","UA","US","NK","DL","9E","B6","AA"],"numofAirlines":9}
+{"City":"San Jose","Airlines":["VX","FL","WN","UA","US","DL","B6","HA","AA"],"numofAirlines":9}
+{"City":"Oakland","Airlines":["FL","WN","US","NK","G4","DL","B6","HA","AA"],"numofAirlines":9}
+{"City":"Memphis","Airlines":["FL","WN","UA","US","DL","9E","K5","F9","AA"],"numofAirlines":9}
+{"City":"Toronto","Airlines":["AC","PD","WS","UA","US","TS","DL","AA"],"numofAirlines":8}
+{"City":"Calgary","Airlines":["AC","4N","WS","UA","US","TS","DL","AA"],"numofAirlines":8}
+{"City":"Halifax","Airlines":["AC","PD","WS","UA","US","TS","DL","AA"],"numofAirlines":8}
+{"City":"Palm Springs","Airlines":["WS","UA","US","DL","F9","G4","AA","SY"],"numofAirlines":8}
+{"City":"Myrtle Beach","Airlines":["PD","WS","UA","US","NK","DL","G4","AA"],"numofAirlines":8}
+{"City":"Windsor Locks","Airlines":["AC","FL","WN","UA","US","DL","B6","AA"],"numofAirlines":8}
+{"City":"Santa Ana","Airlines":["FL","WS","WN","UA","US","DL","F9","AA"],"numofAirlines":8}
+{"City":"Kahului","Airlines":["AC","WP","WS","UA","US","DL","HA","AA"],"numofAirlines":8}
+{"City":"Salt Lake City","Airlines":["FL","WN","UA","US","DL","B6","F9","AA"],"numofAirlines":8}
+{"City":"Pittsburgh","Airlines":["AC","FL","WN","UA","US","DL","B6","AA"],"numofAirlines":8}
+{"City":"Columbus","Airlines":["AC","FL","WN","UA","US","DL","G4","AA"],"numofAirlines":8}
+{"City":"Cleveland","Airlines":["AC","FL","WN","UA","US","DL","F9","AA"],"numofAirlines":8}
+{"City":"Syracuse","Airlines":["AC","UA","US","DL","9E","B6","G4","AA"],"numofAirlines":8}
+{"City":"Milwaukee","Airlines":["AC","FL","WN","UA","US","DL","F9","AA"],"numofAirlines":8}
+{"City":"Harrisburg","Airlines":["AC","UA","US","DL","9E","F9","G4","AA"],"numofAirlines":8}
+{"City":"Indianapolis","Airlines":["AC","FL","WN","UA","US","DL","F9","AA"],"numofAirlines":8}
+{"City":"Burbank","Airlines":["FL","WN","UA","US","DL","K5","B6","AA"],"numofAirlines":8}
+{"City":"Albuquerque","Airlines":["LW","FL","WN","UA","US","DL","B6","AA"],"numofAirlines":8}
+{"City":"Oklahoma City","Airlines":["FL","WN","UA","US","DL","F9","G4","AA"],"numofAirlines":8}
+{"City":"Sacramento","Airlines":["FL","WN","UA","US","DL","B6","HA","AA"],"numofAirlines":8}
+{"City":"Little Rock","Airlines":["FL","WN","UA","US","DL","F9","G4","AA"],"numofAirlines":8}
+{"City":"Des Moines","Airlines":["FL","WN","UA","US","DL","F9","G4","AA"],"numofAirlines":8}
+{"City":"Greenville","Airlines":["FL","WN","UA","US","DL","9E","G4","AA"],"numofAirlines":8}
+{"City":"Winnipeg","Airlines":["AC","WS","JV","UA","DL","7F","5T"],"numofAirlines":7}
+{"City":"Quebec","Airlines":["AC","PD","WS","UA","US","TS","AA"],"numofAirlines":7}
+{"City":"Lihue","Airlines":["WP","WS","UA","US","DL","HA","AA"],"numofAirlines":7}
+{"City":"Anchorage","Airlines":["UA","US","KO","DL","AA","7H","KS"],"numofAirlines":7}
+{"City":"Richmond","Airlines":["FL","WN","UA","US","DL","B6","AA"],"numofAirlines":7}
+{"City":"Buffalo","Airlines":["FL","WN","UA","US","DL","B6","AA"],"numofAirlines":7}
+{"City":"Jacksonville","Airlines":["FL","WN","UA","US","DL","B6","AA"],"numofAirlines":7}
+{"City":"West Palm Beach","Airlines":["FL","WN","UA","US","DL","B6","AA"],"numofAirlines":7}
+{"City":"Albany","Airlines":["FL","WN","UA","US","DL","9K","AA"],"numofAirlines":7}
+{"City":"Spokane","Airlines":["FL","WN","UA","US","DL","F9","AA"],"numofAirlines":7}
+{"City":"Boise","Airlines":["FL","WN","UA","US","DL","G4","AA"],"numofAirlines":7}
+{"City":"Omaha","Airlines":["FL","WN","UA","US","DL","F9","AA"],"numofAirlines":7}
+{"City":"Wichita","Airlines":["FL","WN","UA","US","DL","G4","AA"],"numofAirlines":7}
+{"City":"Tulsa","Airlines":["FL","WN","UA","US","DL","G4","AA"],"numofAirlines":7}
+{"City":"Reno","Airlines":["FL","WN","UA","US","DL","G4","AA"],"numofAirlines":7}
+{"City":"Jackson","Airlines":["FL","WN","UA","US","DL","K5","AA"],"numofAirlines":7}
+{"City":"Grand Rapids","Airlines":["FL","WN","UA","US","DL","G4","AA"],"numofAirlines":7}
+{"City":"Knoxville","Airlines":["UA","US","DL","9E","F9","G4","AA"],"numofAirlines":7}
+{"City":"Providence","Airlines":["FL","WN","UA","US","DL","B6","AA"],"numofAirlines":7}
+{"City":"Greensboro","Airlines":["UA","US","DL","9E","F9","G4","AA"],"numofAirlines":7}
+{"City":"White Plains","Airlines":["UA","US","TJ","DL","B6","9K","AA"],"numofAirlines":7}
+{"City":"Cedar Rapids","Airlines":["UA","US","DL","9E","F9","G4","AA"],"numofAirlines":7}
+{"City":"Yellowknife","Airlines":["AC","4N","J3","WS","7F","5T"],"numofAirlines":6}
+{"City":"Victoria","Airlines":["AC","LW","JB","WS","UA","8P"],"numofAirlines":6}
+{"City":"Kelowna","Airlines":["AC","4N","J3","WS","UA","8P"],"numofAirlines":6}
+{"City":"Miami","Airlines":["AC","WS","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"Kona","Airlines":["WS","UA","US","DL","HA","AA"],"numofAirlines":6}
+{"City":"Akron","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"Islip","Airlines":["FL","WN","US","G4","AA","KS"],"numofAirlines":6}
+{"City":"Ontario","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"Eugene","Airlines":["UA","US","DL","F9","G4","AA"],"numofAirlines":6}
+{"City":"Louisville","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"San Antonio","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"El Paso","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"Tucson","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"Fresno","Airlines":["UA","US","DL","F9","G4","AA"],"numofAirlines":6}
+{"City":"Norfolk","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"Bentonville","Airlines":["UA","US","DL","9E","G4","AA"],"numofAirlines":6}
+{"City":"Flint","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"Dayton","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"Manchester NH","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"Burlington","Airlines":["UA","US","DL","B6","G4","AA"],"numofAirlines":6}
+{"City":"Birmingham","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"Fort Wayne","Airlines":["UA","US","DL","9E","G4","AA"],"numofAirlines":6}
+{"City":"Lexington KY","Airlines":["UA","US","DL","9E","G4","AA"],"numofAirlines":6}
+{"City":"Key West","Airlines":["FL","WN","UA","US","DL","AA"],"numofAirlines":6}
+{"City":"Fargo","Airlines":["UA","US","DL","F9","G4","AA"],"numofAirlines":6}
+{"City":"Sioux Falls","Airlines":["UA","US","DL","F9","G4","AA"],"numofAirlines":6}
+{"City":"Roanoke VA","Airlines":["UA","US","DL","9E","G4","AA"],"numofAirlines":6}
+{"City":"St. John's","Airlines":["AC","PD","WS","UA","TS"],"numofAirlines":5}
+{"City":"Moncton","Airlines":["AC","PD","WS","UA","TS"],"numofAirlines":5}
+{"City":"Savannah","Airlines":["UA","US","DL","B6","AA"],"numofAirlines":5}
+{"City":"Dallas","Airlines":["FL","WN","UA","DL","K5"],"numofAirlines":5}
+{"City":"Madison","Airlines":["UA","US","DL","F9","AA"],"numofAirlines":5}
+{"City":"Grand Junction","Airlines":["UA","US","DL","G4","AA"],"numofAirlines":5}
+{"City":"Colorado Springs","Airlines":["UA","US","DL","G4","AA"],"numofAirlines":5}
+{"City":"Amarillo","Airlines":["FL","WN","UA","US","AA"],"numofAirlines":5}
+{"City":"Lubbock","Airlines":["FL","WN","UA","US","AA"],"numofAirlines":5}
+{"City":"Midland","Airlines":["FL","WN","UA","US","AA"],"numofAirlines":5}
+{"City":"Allentown","Airlines":["UA","US","DL","G4","AA"],"numofAirlines":5}
+{"City":"Sarasota","Airlines":["UA","US","DL","B6","AA"],"numofAirlines":5}
+{"City":"Pensacola","Airlines":["WN","UA","US","DL","AA"],"numofAirlines":5}
+{"City":"Chattanooga","Airlines":["US","DL","9E","G4","AA"],"numofAirlines":5}
+{"City":"Lansing","Airlines":["UA","DL","9E","G4","SY"],"numofAirlines":5}
+{"City":"Asheville","Airlines":["UA","US","DL","G4","AA"],"numofAirlines":5}
+{"City":"Newburgh","Airlines":["US","DL","B6","G4","AA"],"numofAirlines":5}
+{"City":"Rapid City","Airlines":["UA","US","DL","G4","AA"],"numofAirlines":5}
+{"City":"Shreveport","Airlines":["UA","US","DL","G4","AA"],"numofAirlines":5}
+{"City":"Corpus Christi","Airlines":["FL","WN","UA","US","AA"],"numofAirlines":5}
+{"City":"Elmira","Airlines":["UA","US","DL","G4","AA"],"numofAirlines":5}
+{"City":"Moline","Airlines":["UA","US","DL","G4","AA"],"numofAirlines":5}
+{"City":"Peoria","Airlines":["UA","US","DL","G4","AA"],"numofAirlines":5}
+{"City":"Springfield","Airlines":["UA","US","DL","G4","AA"],"numofAirlines":5}
+{"City":"Newport News","Airlines":["US","DL","F9","G4","AA"],"numofAirlines":5}
+{"City":"Bloomington","Airlines":["US","DL","F9","G4","AA"],"numofAirlines":5}
+{"City":"Scranton","Airlines":["UA","US","DL","G4","AA"],"numofAirlines":5}
+{"City":"Thunder Bay","Airlines":["AC","PD","WS","JV"],"numofAirlines":4}
+{"City":"Saskatoon","Airlines":["AC","WS","DL","UA"],"numofAirlines":4}
+{"City":"Regina","Airlines":["AC","WS","DL","UA"],"numofAirlines":4}
+{"City":"Fort Mcmurray","Airlines":["AC","WS","UA","J3"],"numofAirlines":4}
+{"City":"Fort Smith","Airlines":["AA","DL","US","J3"],"numofAirlines":4}
+{"City":"Long Beach","Airlines":["AA","DL","US","B6"],"numofAirlines":4}
+{"City":"Santa Barbara","Airlines":["AA","UA","US","F9"],"numofAirlines":4}
+{"City":"Monterey","Airlines":["G4","AA","UA","US"],"numofAirlines":4}
+{"City":"Bangor","Airlines":["G4","AA","DL","US"],"numofAirlines":4}
+{"City":"Redmond-Bend","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Medford","Airlines":["G4","AA","DL","UA"],"numofAirlines":4}
+{"City":"Gainesville","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Erie","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Lafayette","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Ithaca","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Minot","Airlines":["G4","DL","UA","F9"],"numofAirlines":4}
+{"City":"Valparaiso","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Tallahassee","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Wilmington","Airlines":["AA","DL","US","F9"],"numofAirlines":4}
+{"City":"Huntsville","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Fayetteville","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Columbia","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Bozeman","Airlines":["G4","DL","UA","F9"],"numofAirlines":4}
+{"City":"Billings","Airlines":["G4","DL","UA","9K"],"numofAirlines":4}
+{"City":"Mobile","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Monroe","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Mcallen","Airlines":["G4","AA","UA","US"],"numofAirlines":4}
+{"City":"Laredo","Airlines":["G4","AA","UA","US"],"numofAirlines":4}
+{"City":"Killeen","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Gulfport","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Baton Rouge","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Alexandria","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"BRISTOL","Airlines":["G4","AA","DL","US"],"numofAirlines":4}
+{"City":"Traverse City","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"State College Pennsylvania","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Green Bay","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Evansville","Airlines":["AA","DL","9E","US"],"numofAirlines":4}
+{"City":"Wassau","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Binghamton","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Kalamazoo","Airlines":["AA","DL","9E","US"],"numofAirlines":4}
+{"City":"Charlottesville VA","Airlines":["AA","DL","UA","US"],"numofAirlines":4}
+{"City":"Bismarck","Airlines":["G4","DL","UA","F9"],"numofAirlines":4}
+{"City":"Watertown","Airlines":["AA","US","ZK","F9"],"numofAirlines":4}
+{"City":"Sault Sainte Marie","Airlines":["AC","PD","JV"],"numofAirlines":3}
+{"City":"Sudbury","Airlines":["AC","PD","JV"],"numofAirlines":3}
+{"City":"Comox","Airlines":["AC","WS","8P"],"numofAirlines":3}
+{"City":"Waterloo","Airlines":["WS","AA","US"],"numofAirlines":3}
+{"City":"London","Airlines":["AC","WS","UA"],"numofAirlines":3}
+{"City":"Windsor","Airlines":["AC","PD","WS"],"numofAirlines":3}
+{"City":"Timmins","Airlines":["AC","PD","JV"],"numofAirlines":3}
+{"City":"Terrace","Airlines":["AC","WS","BH"],"numofAirlines":3}
+{"City":"Hilo","Airlines":["HA","UA","US"],"numofAirlines":3}
+{"City":"Grand Forks","Airlines":["G4","DL","9E"],"numofAirlines":3}
+{"City":"Plattsburgh","Airlines":["G4","KS","NK"],"numofAirlines":3}
+{"City":"Bakersfield","Airlines":["AA","UA","US"],"numofAirlines":3}
+{"City":"Show Low","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"Page","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"Yuma","Airlines":["AA","UA","US"],"numofAirlines":3}
+{"City":"San Luis Obispo","Airlines":["AA","UA","US"],"numofAirlines":3}
+{"City":"Durango","Airlines":["AA","UA","US"],"numofAirlines":3}
+{"City":"Pasco","Airlines":["G4","DL","UA"],"numofAirlines":3}
+{"City":"Santa Fe","Airlines":["AA","UA","US"],"numofAirlines":3}
+{"City":"Huron","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"Pierre","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"Harlingen","Airlines":["WN","UA","FL"],"numofAirlines":3}
+{"City":"Lake Charles","Airlines":["AA","UA","US"],"numofAirlines":3}
+{"City":"Huntington","Airlines":["G4","AA","US"],"numofAirlines":3}
+{"City":"Jacksonville NC","Airlines":["AA","DL","US"],"numofAirlines":3}
+{"City":"Bush Field","Airlines":["AA","DL","US"],"numofAirlines":3}
+{"City":"Missoula","Airlines":["G4","DL","UA"],"numofAirlines":3}
+{"City":"Idaho Falls","Airlines":["G4","DL","UA"],"numofAirlines":3}
+{"City":"Great Falls","Airlines":["G4","DL","UA"],"numofAirlines":3}
+{"City":"Kalispell","Airlines":["G4","DL","UA"],"numofAirlines":3}
+{"City":"Casper","Airlines":["G4","DL","UA"],"numofAirlines":3}
+{"City":"Tyler","Airlines":["AA","UA","US"],"numofAirlines":3}
+{"City":"College Station","Airlines":["AA","UA","US"],"numofAirlines":3}
+{"City":"Brownsville","Airlines":["AA","UA","US"],"numofAirlines":3}
+{"City":"Duluth","Airlines":["G4","DL","UA"],"numofAirlines":3}
+{"City":"Unalakleet","Airlines":["8E","7H","KS"],"numofAirlines":3}
+{"City":"South Bend","Airlines":["G4","DL","UA"],"numofAirlines":3}
+{"City":"Toledo","Airlines":["G4","AA","US"],"numofAirlines":3}
+{"City":"Gwinn","Airlines":["AA","DL","US"],"numofAirlines":3}
+{"City":"Saginaw","Airlines":["DL","9E","UA"],"numofAirlines":3}
+{"City":"Appleton","Airlines":["G4","DL","UA"],"numofAirlines":3}
+{"City":"MONTGOMERY","Airlines":["AA","DL","US"],"numofAirlines":3}
+{"City":"Grand Island","Airlines":["G4","AA","US"],"numofAirlines":3}
+{"City":"Melbourne","Airlines":["AA","DL","US"],"numofAirlines":3}
+{"City":"New Bern","Airlines":["AA","DL","US"],"numofAirlines":3}
+{"City":"Daytona Beach","Airlines":["AA","DL","US"],"numofAirlines":3}
+{"City":"Farmington","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"Alamosa","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"Liberal","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"Dodge City","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"Cheyenne","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"Alliance","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"Worland","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"La Crosse","Airlines":["AA","DL","US"],"numofAirlines":3}
+{"City":"Chadron","Airlines":["UA","ZK","F9"],"numofAirlines":3}
+{"City":"Baker Lake","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Repulse Bay","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Rankin Inlet","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Whale Cove","Airlines":["5T","7F"],"numofAirlines":2}
+{"City":"Chesterfield Inlet","Airlines":["5T","7F"],"numofAirlines":2}
+{"City":"Campbell River","Airlines":["AC","8P"],"numofAirlines":2}
+{"City":"Cambridge Bay","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Gjoa Haven","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Coppermine","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Spence Bay","Airlines":["5T","7F"],"numofAirlines":2}
+{"City":"Nanaimo","Airlines":["AC","WS"],"numofAirlines":2}
+{"City":"Clyde River","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Pond Inlet","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Iqaluit","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Coral Harbour","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Cape Dorset","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Deer Lake","Airlines":["AC","WS"],"numofAirlines":2}
+{"City":"Hay River","Airlines":["J3","7F"],"numofAirlines":2}
+{"City":"Grande Prairie","Airlines":["AC","WS"],"numofAirlines":2}
+{"City":"Whitehorse","Airlines":["4N","AC"],"numofAirlines":2}
+{"City":"Eskimo Point","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Inuvik","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Norman Wells","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Pangnirtung","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Hall Beach","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Igloolik","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Charlottetown","Airlines":["AC","WS"],"numofAirlines":2}
+{"City":"Kamloops","Airlines":["AC","WS"],"numofAirlines":2}
+{"City":"Red Deer Industrial","Airlines":["AC","J3"],"numofAirlines":2}
+{"City":"Cranbrook","Airlines":["AC","8P"],"numofAirlines":2}
+{"City":"Prince Pupert","Airlines":["AC","BH"],"numofAirlines":2}
+{"City":"Williams Lake","Airlines":["AC","8P"],"numofAirlines":2}
+{"City":"North Bay","Airlines":["AC","JV"],"numofAirlines":2}
+{"City":"Broughton Island","Airlines":["7F","5T"],"numofAirlines":2}
+{"City":"Prince George","Airlines":["AC","WS"],"numofAirlines":2}
+{"City":"Fort Saint John","Airlines":["AC","WS"],"numofAirlines":2}
+{"City":"Smithers","Airlines":["AC","BH"],"numofAirlines":2}
+{"City":"Kotzebue","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Nantucket","Airlines":["TJ","9K"],"numofAirlines":2}
+{"City":"Atlantic City","Airlines":["UA","NK"],"numofAirlines":2}
+{"City":"Flagstaff","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Longview","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"North Bend","Airlines":["UA","K5"],"numofAirlines":2}
+{"City":"Santa Maria","Airlines":["G4","UA"],"numofAirlines":2}
+{"City":"Carlsbad","Airlines":["LW","UA"],"numofAirlines":2}
+{"City":"Juneau","Airlines":["AA","K5"],"numofAirlines":2}
+{"City":"Garden City","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Branson","Airlines":["WN","F9"],"numofAirlines":2}
+{"City":"Helena","Airlines":["DL","UA"],"numofAirlines":2}
+{"City":"Niagara Falls","Airlines":["G4","NK"],"numofAirlines":2}
+{"City":"Hilton Head Island","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Saint George","Airlines":["DL","UA"],"numofAirlines":2}
+{"City":"Rock Springs","Airlines":["DL","UA"],"numofAirlines":2}
+{"City":"Jacksn Hole","Airlines":["DL","UA"],"numofAirlines":2}
+{"City":"Gillette","Airlines":["DL","UA"],"numofAirlines":2}
+{"City":"Cody","Airlines":["DL","UA"],"numofAirlines":2}
+{"City":"Lincoln","Airlines":["DL","UA"],"numofAirlines":2}
+{"City":"Panama City","Airlines":["WN","DL"],"numofAirlines":2}
+{"City":"Williamsport","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Beaumont","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Nome","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"White Mountain","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Teller","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Savoonga","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Shishmaref","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Koyuk","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Gambell","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Elim","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Wales","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Shaktoolik","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Brevig Mission","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Golovin","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Salisbury","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Williston","Airlines":["DL","UA"],"numofAirlines":2}
+{"City":"Texarkana","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Wichita Falls","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"San Angelo","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Roswell","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Manhattan","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Lawton","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Joplin","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Champaign","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Waco","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Abilene","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Owensboro","Airlines":["G4","9K"],"numofAirlines":2}
+{"City":"Noatak","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Selawik","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Shungnak","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Noorvik","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Kivalina","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Kiana","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Deering","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Buckland","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Ambler","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Hagerstown","Airlines":["LW","G4"],"numofAirlines":2}
+{"City":"Lanai","Airlines":["HA","WP"],"numofAirlines":2}
+{"City":"Dickinson","Airlines":["DL","UA"],"numofAirlines":2}
+{"City":"New Haven","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Sioux City","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Aniak","Airlines":["7H","KS"],"numofAirlines":2}
+{"City":"Dubuque IA","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Saint Cloud","Airlines":["G4","UA"],"numofAirlines":2}
+{"City":"Lynchburg","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Florence","Airlines":["AA","US"],"numofAirlines":2}
+{"City":"Clarksburg","Airlines":["G4","UA"],"numofAirlines":2}
+{"City":"St. Michael","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Kobuk","Airlines":["8E","7H"],"numofAirlines":2}
+{"City":"Baie Comeau","Airlines":["AC"],"numofAirlines":1}
+{"City":"Mont Joli","Airlines":["AC"],"numofAirlines":1}
+{"City":"Bagotville","Airlines":["AC"],"numofAirlines":1}
+{"City":"Brandon","Airlines":["WS"],"numofAirlines":1}
+{"City":"Castlegar","Airlines":["AC"],"numofAirlines":1}
+{"City":"Holman Island","Airlines":["7F"],"numofAirlines":1}
+{"City":"Goose Bay","Airlines":["AC"],"numofAirlines":1}
+{"City":"Abbotsford","Airlines":["WS"],"numofAirlines":1}
+{"City":"Hamilton","Airlines":["WS"],"numofAirlines":1}
+{"City":"Churchill","Airlines":["5T"],"numofAirlines":1}
+{"City":"Quujjuaq","Airlines":["7F"],"numofAirlines":1}
+{"City":"Kimmirut","Airlines":["7F"],"numofAirlines":1}
+{"City":"Arctic Bay","Airlines":["7F"],"numofAirlines":1}
+{"City":"Fredericton","Airlines":["AC"],"numofAirlines":1}
+{"City":"Flin Flon","Airlines":["JV"],"numofAirlines":1}
+{"City":"The Pas","Airlines":["JV"],"numofAirlines":1}
+{"City":"Fort Simpson","Airlines":["7F"],"numofAirlines":1}
+{"City":"Kingston","Airlines":["AC"],"numofAirlines":1}
+{"City":"Gaspe","Airlines":["AC"],"numofAirlines":1}
+{"City":"Iles De La Madeleine","Airlines":["AC"],"numofAirlines":1}
+{"City":"Dryden","Airlines":["JV"],"numofAirlines":1}
+{"City":"Sioux Lookout","Airlines":["JV"],"numofAirlines":1}
+{"City":"Red Lake","Airlines":["JV"],"numofAirlines":1}
+{"City":"Kenora","Airlines":["JV"],"numofAirlines":1}
+{"City":"Gander","Airlines":["AC"],"numofAirlines":1}
+{"City":"Sydney","Airlines":["AC"],"numofAirlines":1}
+{"City":"St. John","Airlines":["AC"],"numofAirlines":1}
+{"City":"Fort Chipewyan","Airlines":["J3"],"numofAirlines":1}
+{"City":"Sept-iles","Airlines":["AC"],"numofAirlines":1}
+{"City":"Fort Frances","Airlines":["JV"],"numofAirlines":1}
+{"City":"Lethbridge","Airlines":["AC"],"numofAirlines":1}
+{"City":"Quesnel","Airlines":["AC"],"numofAirlines":1}
+{"City":"Resolute","Airlines":["7F"],"numofAirlines":1}
+{"City":"Thompson","Airlines":["5T"],"numofAirlines":1}
+{"City":"Kapuskasing","Airlines":["JV"],"numofAirlines":1}
+{"City":"Bathurst","Airlines":["AC"],"numofAirlines":1}
+{"City":"Val D'or","Airlines":["AC"],"numofAirlines":1}
+{"City":"Rouyn","Airlines":["AC"],"numofAirlines":1}
+{"City":"Sandspit","Airlines":["AC"],"numofAirlines":1}
+{"City":"Penticton","Airlines":["AC"],"numofAirlines":1}
+{"City":"Bella Coola","Airlines":["8P"],"numofAirlines":1}
+{"City":"Powell River","Airlines":["8P"],"numofAirlines":1}
+{"City":"Port Hardy","Airlines":["8P"],"numofAirlines":1}
+{"City":"Trail","Airlines":["8P"],"numofAirlines":1}
+{"City":"Masset","Airlines":["8P"],"numofAirlines":1}
+{"City":"Wabush","Airlines":["AC"],"numofAirlines":1}
+{"City":"Medicine Hat","Airlines":["AC"],"numofAirlines":1}
+{"City":"Sarnia","Airlines":["AC"],"numofAirlines":1}
+{"City":"Barter Island","Airlines":["7H"],"numofAirlines":1}
+{"City":"Deadhorse","Airlines":["7H"],"numofAirlines":1}
+{"City":"Fort Yukon","Airlines":["7H"],"numofAirlines":1}
+{"City":"Cape Lisburne","Airlines":["8E"],"numofAirlines":1}
+{"City":"Point Lay","Airlines":["7H"],"numofAirlines":1}
+{"City":"Barrow","Airlines":["7H"],"numofAirlines":1}
+{"City":"Fairbanks","Airlines":["7H"],"numofAirlines":1}
+{"City":"St. Paul Island","Airlines":["KS"],"numofAirlines":1}
+{"City":"Point Barrow","Airlines":["KS"],"numofAirlines":1}
+{"City":"Iliamna","Airlines":["KO"],"numofAirlines":1}
+{"City":"Sanford","Airlines":["G4"],"numofAirlines":1}
+{"City":"Mesa","Airlines":["G4"],"numofAirlines":1}
+{"City":"Thief River Falls","Airlines":["9E"],"numofAirlines":1}
+{"City":"Prescott","Airlines":["ZK"],"numofAirlines":1}
+{"City":"Trenton","Airlines":["F9"],"numofAirlines":1}
+{"City":"St. Augustine Airport","Airlines":["F9"],"numofAirlines":1}
+{"City":"Presque Isle","Airlines":["KS"],"numofAirlines":1}
+{"City":"Augusta","Airlines":["9K"],"numofAirlines":1}
+{"City":"Bar Harbor","Airlines":["9K"],"numofAirlines":1}
+{"City":"Barnstable","Airlines":["9K"],"numofAirlines":1}
+{"City":"Lebanon","Airlines":["9K"],"numofAirlines":1}
+{"City":"Vineyard Haven MA","Airlines":["9K"],"numofAirlines":1}
+{"City":"Provincetown","Airlines":["9K"],"numofAirlines":1}
+{"City":"Rockland","Airlines":["9K"],"numofAirlines":1}
+{"City":"Rutland","Airlines":["9K"],"numofAirlines":1}
+{"City":"Saranac Lake","Airlines":["9K"],"numofAirlines":1}
+{"City":"Bellingham","Airlines":["G4"],"numofAirlines":1}
+{"City":"Provo","Airlines":["G4"],"numofAirlines":1}
+{"City":"Salina","Airlines":["K5"],"numofAirlines":1}
+{"City":"Harrison","Airlines":["K5"],"numofAirlines":1}
+{"City":"Dillingham","Airlines":["KS"],"numofAirlines":1}
+{"City":"St. Petersburg","Airlines":["G4"],"numofAirlines":1}
+{"City":"Redding","Airlines":["UA"],"numofAirlines":1}
+{"City":"Modesto","Airlines":["UA"],"numofAirlines":1}
+{"City":"Klamath Falls","Airlines":["UA"],"numofAirlines":1}
+{"City":"Chico","Airlines":["UA"],"numofAirlines":1}
+{"City":"Crescent City","Airlines":["UA"],"numofAirlines":1}
+{"City":"Arcata CA","Airlines":["UA"],"numofAirlines":1}
+{"City":"Hot Springs","Airlines":["K5"],"numofAirlines":1}
+{"City":"El Dorado","Airlines":["K5"],"numofAirlines":1}
+{"City":"Visalia","Airlines":["ZK"],"numofAirlines":1}
+{"City":"Merced","Airlines":["ZK"],"numofAirlines":1}
+{"City":"Aspen","Airlines":["UA"],"numofAirlines":1}
+{"City":"Santa Rosa","Airlines":["AA"],"numofAirlines":1}
+{"City":"Mammoth Lakes","Airlines":["AA"],"numofAirlines":1}
+{"City":"PARKERSBURG","Airlines":["UA"],"numofAirlines":1}
+{"City":"Jamestown","Airlines":["UA"],"numofAirlines":1}
+{"City":"Franklin","Airlines":["UA"],"numofAirlines":1}
+{"City":"Du Bois","Airlines":["UA"],"numofAirlines":1}
+{"City":"Bradford","Airlines":["UA"],"numofAirlines":1}
+{"City":"Punta Gorda","Airlines":["G4"],"numofAirlines":1}
+{"City":"Skagway","Airlines":["K5"],"numofAirlines":1}
+{"City":"Haines","Airlines":["K5"],"numofAirlines":1}
+{"City":"Hoonah","Airlines":["K5"],"numofAirlines":1}
+{"City":"Gustavus","Airlines":["K5"],"numofAirlines":1}
+{"City":"Ketchikan","Airlines":["AA"],"numofAirlines":1}
+{"City":"Youngstown","Airlines":["G4"],"numofAirlines":1}
+{"City":"Latrobe","Airlines":["NK"],"numofAirlines":1}
+{"City":"Teterboro","Airlines":["TJ"],"numofAirlines":1}
+{"City":"New Bedford","Airlines":["9K"],"numofAirlines":1}
+{"City":"Pueblo","Airlines":["UA"],"numofAirlines":1}
+{"City":"Kodiak","Airlines":["7H"],"numofAirlines":1}
+{"City":"Worcester","Airlines":["B6"],"numofAirlines":1}
+{"City":"International Falls","Airlines":["DL"],"numofAirlines":1}
+{"City":"Brainerd","Airlines":["DL"],"numofAirlines":1}
+{"City":"Vernal","Airlines":["DL"],"numofAirlines":1}
+{"City":"Twin Falls","Airlines":["DL"],"numofAirlines":1}
+{"City":"Pocatello","Airlines":["DL"],"numofAirlines":1}
+{"City":"Lewiston","Airlines":["DL"],"numofAirlines":1}
+{"City":"Elko","Airlines":["DL"],"numofAirlines":1}
+{"City":"Moab","Airlines":["DL"],"numofAirlines":1}
+{"City":"Cedar City","Airlines":["DL"],"numofAirlines":1}
+{"City":"Butte","Airlines":["DL"],"numofAirlines":1}
+{"City":"Massena","Airlines":["9K"],"numofAirlines":1}
+{"City":"Hobbs","Airlines":["UA"],"numofAirlines":1}
+{"City":"Nuiqsut","Airlines":["7H"],"numofAirlines":1}
+{"City":"Atqasuk","Airlines":["7H"],"numofAirlines":1}
+{"City":"Wainwright","Airlines":["7H"],"numofAirlines":1}
+{"City":"Bethel","Airlines":["7H"],"numofAirlines":1}
+{"City":"Chevak","Airlines":["7H"],"numofAirlines":1}
+{"City":"Toksook Bay","Airlines":["7H"],"numofAirlines":1}
+{"City":"Nightmute","Airlines":["7H"],"numofAirlines":1}
+{"City":"Marshall","Airlines":["7H"],"numofAirlines":1}
+{"City":"Kwethluk","Airlines":["7H"],"numofAirlines":1}
+{"City":"Quinhagak","Airlines":["7H"],"numofAirlines":1}
+{"City":"Kwigillingok","Airlines":["7H"],"numofAirlines":1}
+{"City":"Kasigluk","Airlines":["7H"],"numofAirlines":1}
+{"City":"Kalskag","Airlines":["7H"],"numofAirlines":1}
+{"City":"Kongiganak","Airlines":["7H"],"numofAirlines":1}
+{"City":"Hooper Bay","Airlines":["7H"],"numofAirlines":1}
+{"City":"Eek","Airlines":["7H"],"numofAirlines":1}
+{"City":"Chefornak","Airlines":["7H"],"numofAirlines":1}
+{"City":"Havre","Airlines":["9K"],"numofAirlines":1}
+{"City":"Cordova","Airlines":["7H"],"numofAirlines":1}
+{"City":"Tin City","Airlines":["8E"],"numofAirlines":1}
+{"City":"Rockford","Airlines":["G4"],"numofAirlines":1}
+{"City":"Kenai","Airlines":["7H"],"numofAirlines":1}
+{"City":"Imperial","Airlines":["K5"],"numofAirlines":1}
+{"City":"Pellston","Airlines":["DL"],"numofAirlines":1}
+{"City":"Escanaba","Airlines":["DL"],"numofAirlines":1}
+{"City":"Sault Ste Marie","Airlines":["DL"],"numofAirlines":1}
+{"City":"Alpena","Airlines":["DL"],"numofAirlines":1}
+{"City":"Hibbing","Airlines":["DL"],"numofAirlines":1}
+{"City":"Homer","Airlines":["7H"],"numofAirlines":1}
+{"City":"Fort Leonardwood","Airlines":["9K"],"numofAirlines":1}
+{"City":"Cape Girardeau","Airlines":["9K"],"numofAirlines":1}
+{"City":"Kirksville","Airlines":["9K"],"numofAirlines":1}
+{"City":"Marion","Airlines":["9K"],"numofAirlines":1}
+{"City":"Quincy","Airlines":["9K"],"numofAirlines":1}
+{"City":"Valdosta","Airlines":["DL"],"numofAirlines":1}
+{"City":"Columbus Mississippi","Airlines":["DL"],"numofAirlines":1}
+{"City":"Dothan","Airlines":["DL"],"numofAirlines":1}
+{"City":"Brunswick","Airlines":["DL"],"numofAirlines":1}
+{"City":"Athens","Airlines":["K5"],"numofAirlines":1}
+{"City":"Altoona","Airlines":["UA"],"numofAirlines":1}
+{"City":"Johnstown","Airlines":["UA"],"numofAirlines":1}
+{"City":"Molokai","Airlines":["HA"],"numofAirlines":1}
+{"City":"Weyers Cave","Airlines":["UA"],"numofAirlines":1}
+{"City":"Morgantown","Airlines":["UA"],"numofAirlines":1}
+{"City":"Lewisburg","Airlines":["UA"],"numofAirlines":1}
+{"City":"Beckley","Airlines":["UA"],"numofAirlines":1}
+{"City":"Lancaster","Airlines":["LW"],"numofAirlines":1}
+{"City":"Pendleton","Airlines":["K5"],"numofAirlines":1}
+{"City":"Ogdensburg","Airlines":["9K"],"numofAirlines":1}
+{"City":"Eastsound","Airlines":["M5"],"numofAirlines":1}
+{"City":"Port Angeles","Airlines":["M5"],"numofAirlines":1}
+{"City":"Sheridan","Airlines":["ZK"],"numofAirlines":1}
+{"City":"Riverton WY","Airlines":["ZK"],"numofAirlines":1}
+{"City":"McCook","Airlines":["ZK"],"numofAirlines":1}
+{"City":"North Platte","Airlines":["ZK"],"numofAirlines":1}
+{"City":"Cortez","Airlines":["ZK"],"numofAirlines":1}
+{"City":"Scottsbluff","Airlines":["ZK"],"numofAirlines":1}
+{"City":"Montrose CO","Airlines":["UA"],"numofAirlines":1}
+{"City":"Laramie","Airlines":["UA"],"numofAirlines":1}
+{"City":"Hayden","Airlines":["UA"],"numofAirlines":1}
+{"City":"Gunnison","Airlines":["UA"],"numofAirlines":1}
+{"City":"Vail","Airlines":["UA"],"numofAirlines":1}
+{"City":"Galena","Airlines":["7H"],"numofAirlines":1}
+{"City":"Ruby","Airlines":["7H"],"numofAirlines":1}
+{"City":"Nulato","Airlines":["7H"],"numofAirlines":1}
+{"City":"Kaltag","Airlines":["7H"],"numofAirlines":1}
+{"City":"Huslia","Airlines":["7H"],"numofAirlines":1}
+{"City":"St Mary's","Airlines":["7H"],"numofAirlines":1}
+{"City":"Valdez","Airlines":["7H"],"numofAirlines":1}
+{"City":"King Salmon","Airlines":["KS"],"numofAirlines":1}
+{"City":"Cold Bay","Airlines":["KS"],"numofAirlines":1}
+{"City":"Mcgrath","Airlines":["KS"],"numofAirlines":1}
+{"City":"Sand Point","Airlines":["KS"],"numofAirlines":1}
+{"City":"Belleville","Airlines":["G4"],"numofAirlines":1}
+{"City":"Stockton","Airlines":["G4"],"numofAirlines":1}
+{"City":"PADUCAH","Airlines":["UA"],"numofAirlines":1}
+{"City":"Muskegon","Airlines":["UA"],"numofAirlines":1}
+{"City":"Topeka","Airlines":["UA"],"numofAirlines":1}
+{"City":"Eau Claire","Airlines":["UA"],"numofAirlines":1}
+{"City":"Hancock","Airlines":["UA"],"numofAirlines":1}
+{"City":"Rhinelander","Airlines":["DL"],"numofAirlines":1}
+{"City":"Iron Mountain","Airlines":["DL"],"numofAirlines":1}
+{"City":"Bemidji","Airlines":["DL"],"numofAirlines":1}
+{"City":"Aberdeen","Airlines":["DL"],"numofAirlines":1}
+{"City":"Los Alamos","Airlines":["LW"],"numofAirlines":1}
+{"City":"Sidney","Airlines":["9K"],"numofAirlines":1}
+{"City":"Wolf Point","Airlines":["9K"],"numofAirlines":1}
+{"City":"Glasgow","Airlines":["9K"],"numofAirlines":1}
+{"City":"Glendive","Airlines":["9K"],"numofAirlines":1}
+{"City":"Portsmouth","Airlines":["G4"],"numofAirlines":1}
+{"City":"Anahim Lake","Airlines":["8P"],"numofAirlines":1}
+{"City":"Holy Cross","Airlines":["7H"],"numofAirlines":1}
+{"City":"Anvik","Airlines":["7H"],"numofAirlines":1}
+{"City":"Russian Mission","Airlines":["7H"],"numofAirlines":1}
+{"City":"Mountain Village","Airlines":["7H"],"numofAirlines":1}
+{"City":"Shageluk","Airlines":["7H"],"numofAirlines":1}
+{"City":"Chuathbaluk","Airlines":["7H"],"numofAirlines":1}
+{"City":"Scammon Bay","Airlines":["7H"],"numofAirlines":1}
+{"City":"Ogden","Airlines":["G4"],"numofAirlines":1}
+{"City":"Kotlik","Airlines":["7H"],"numofAirlines":1}
+{"City":"Mekoryuk","Airlines":["7H"],"numofAirlines":1}
+{"City":"Togiak Village","Airlines":["7H"],"numofAirlines":1}
+{"City":"Kipnuk","Airlines":["7H"],"numofAirlines":1}
+{"City":"Friday Harbor","Airlines":["M5"],"numofAirlines":1}
+{"City":"Emmonak","Airlines":["7H"],"numofAirlines":1}
+{"City":"Alakanuk","Airlines":["7H"],"numofAirlines":1}
+{"City":"Koyukuk","Airlines":["7H"],"numofAirlines":1}
+{"City":"Sleetmute","Airlines":["7H"],"numofAirlines":1}

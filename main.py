@@ -6,6 +6,11 @@ from fastapi import FastAPI
 import os
 from neo4j import GraphDatabase
 from dotenv import load_dotenv
+import csv
+import json
+from pyspark.sql import SparkSession
+from pyspark.sql.types import StringType
+from pyspark.sql.functions import col, collect_set, size, collect_list, count
 
 load_dotenv()
 URI = "neo4j://localhost:7687"
@@ -28,8 +33,8 @@ def default():
 ################
 #AIRPORT SEARCH#
 ################
-@app.get("/airportSearch/read_TopCountry_w_HighestAirports")
-def read_TopCountry_w_HighestAirports():
+#helper Function
+def read_TopCountry_w_HighestAirports_pySpark(spark):
     driver_neo4j=connection()
     session=driver_neo4j.session()
     ll = {}
@@ -37,14 +42,10 @@ def read_TopCountry_w_HighestAirports():
     MATCH (p:Airport)
     RETURN p.airport_id as Airport_ID, p.country AS Country
     """
-    #x={"Airport_ID":airport_id, "Country": country}
     records=session.run(q1)
-
+    '''
     for record in records: 
-        #print(record.data())
-        #airport_id = record.data()['Airport_ID']
         airport_id = record['Airport_ID']
-        #country = record.data()['Country']
         country = record['Country']
 
         if country not in ll.keys():
@@ -53,10 +54,35 @@ def read_TopCountry_w_HighestAirports():
             ll[country].append(id)   
     top_country = max(ll, key=lambda x: len(ll[x]))
     highest_airports = len(ll[top_country])
-    print(f"{top_country}: {highest_airports}")  
+    print(f"{top_country}: {highest_airports}")
+    '''
+    # Create a DataFrame from Neo4j data
+    columns = ["Airport_ID", "Country"]
+    neo4j_data = [record for record in records]
+    neo4j_df = spark.createDataFrame(neo4j_data, columns)
     
-    data=[{"Top_Country":top_country, "Num":highest_airports}]
-    return data
+    # Perform necessary transformations
+    result_df = neo4j_df.groupBy("Country").count().orderBy("count", ascending=False).limit(1)
+    result_df = result_df.withColumnRenamed("Country", "Top_Country").withColumnRenamed("count", "Num") 
+    results = result_df.toJSON().collect()
+
+    return results
+
+@app.get("/airportSearch/read_TopCountry_w_HighestAirports")
+def read_TopCountry_w_HighestAirports():
+    # Create a Spark session
+    spark = SparkSession.builder.appName("TopCountrywithHighestAirport").getOrCreate()
+
+    # Call the function
+    json_data = read_TopCountry_w_HighestAirports_pySpark(spark)
+
+    # Convert JSON strings to Python dictionaries
+    parsed_results = [json.loads(result) for result in json_data]
+
+    # Stop the Spark session
+    spark.stop()
+
+    return parsed_results
 
 #example: http://127.0.0.1:8081/airportSearch/read_List_Of_Airports_In_Country?country=United%20States
 @app.post("/airportSearch/read_List_Of_Airports_In_Country")
@@ -82,10 +108,8 @@ def read_List_Of_Airports_In_Country(country):
 ################
 #AIRLINE SEARCH#
 ################
-#example: http://127.0.0.1:8081/airlineSearch/read_TopKCities_w_MostAirlines2
-@app.get("/airlineSearch/read_TopKCities_w_MostAirlines2")
-def read_TopKCities_w_MostAirlines2():
-
+#Helper Function
+def read_TopKCities_w_MostAirlines_pySpark(spark):
     driver_neo4j=connection()
     session=driver_neo4j.session()
     
@@ -126,17 +150,50 @@ def read_TopKCities_w_MostAirlines2():
                 city_airlines[dest_city] = set()
             city_airlines[dest_city].add(airline_name)
     sorted_cities = sorted(city_airlines.items(), key=lambda item: len(item[1]), reverse=True)
-    
-    data=[]
-    for city, airlines in sorted_cities:
-        airlines = list(airlines)
-        sorted_airlines = sorted(airlines)
-        print(f"{city}, {sorted_airlines}, {len(sorted_airlines)}")
-        
-        row = {"City":city, "List_of_Airlines":sorted_airlines, "Num": len(sorted_airlines)}
-        data.append(row)
 
-    return data
+    # Convert data to PySpark RDD for custom processing
+    city_airlines_rdd = (
+        spark.sparkContext
+        .parallelize(sorted_cities)
+        .map(lambda item: (item[0], list(item[1])))
+    )
+
+    # Convert RDD back to PySpark DataFrame
+    city_airlines_df = spark.createDataFrame(
+        city_airlines_rdd,
+        ["City", "List_of_Airlines"]
+    )
+
+    # Perform necessary transformations and aggregations
+    city_airlines_df = (
+        city_airlines_df
+        .withColumn("Num", size("List_of_Airlines"))
+        .orderBy("Num", ascending=False)
+    )
+
+    # Collect and print the results
+    results = city_airlines_df.toJSON().collect()
+
+    return results
+
+#example: http://127.0.0.1:8081/airlineSearch/read_TopKCities_w_MostAirlines2
+@app.get("/airlineSearch/read_TopKCities_w_MostAirlines2")
+def read_TopKCities_w_MostAirlines2():
+    # Create a Spark session
+    spark = SparkSession.builder.appName("Scala").getOrCreate()
+
+    # Call the function
+    json_data = read_TopKCities_w_MostAirlines_pySpark(spark)
+
+    # Convert JSON strings to Python dictionaries
+    parsed_results = [json.loads(result) for result in json_data]
+
+    # Stop the Spark session
+    spark.stop()
+
+    return parsed_results
+
+#read_TopKCities_w_MostAirlines2()
 
 #example: http://127.0.0.1:8081/airportSearch/read_List_Of_Routes_by_Airline?airline_name=WN
 @app.post("/airportSearch/read_List_Of_Routes_by_Airline")

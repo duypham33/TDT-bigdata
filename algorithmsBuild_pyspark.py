@@ -1,9 +1,11 @@
 import csv
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StringType
-from pyspark.sql.functions import col, collect_set, size
+from pyspark.sql.functions import col, collect_set, size, collect_list, count
 
 from neo4j import GraphDatabase
+
+#spark-submit my_spark_script.py
 
 URI = "neo4j://localhost:7687"
 AUTH = ('neo4j', 'neo4j1234')
@@ -21,7 +23,6 @@ def read_TopKCities_w_MostAirlines_pySpark(spark, output):
             """,
             database_="neo4j", )
         for record in records: 
-            #print(record.data())
             airport_id = record.data()['Airport_ID']
             city = record.data()['City']
             airport_to_city[airport_id] = city
@@ -50,16 +51,19 @@ def read_TopKCities_w_MostAirlines_pySpark(spark, output):
                 if dest_city not in city_airlines:
                     city_airlines[dest_city] = set()
                 city_airlines[dest_city].add(airline_name)
+    
     sorted_cities = sorted(city_airlines.items(), key=lambda item: len(item[1]), reverse=True)
-    #print(sorted_cities)
-    #for city, airlines in sorted_cities:
-    #    airlines = list(airlines)
-    #    sorted_airlines = sorted(airlines)
-    #    print(f"{city}, {sorted_airlines}, {len(sorted_airlines)}")
 
-    # Convert data to PySpark DataFrame
+    # Convert data to PySpark RDD for custom processing
+    city_airlines_rdd = (
+        spark.sparkContext
+        .parallelize(sorted_cities)
+        .map(lambda item: (item[0], list(item[1])))
+    )
+
+    # Convert RDD back to PySpark DataFrame
     city_airlines_df = spark.createDataFrame(
-        [(city, list(airlines)) for city, airlines in sorted_cities],
+        city_airlines_rdd,
         ["City", "Airlines"]
     )
 
@@ -68,17 +72,10 @@ def read_TopKCities_w_MostAirlines_pySpark(spark, output):
         city_airlines_df
         .withColumn("numofAirlines", size("Airlines"))
         .orderBy("numofAirlines", ascending=False)
-        .limit(10)
     )
 
     # Collect and print the results
     results = city_airlines_df.collect()
-
-    #for row in results:
-    #    city = row["City"]
-    #    airlines = sorted(row["Airlines"])  # Convert back to list
-    #    num_of_airlines = row["numofAirlines"]
-    #    print(f"{city}, {airlines}, {num_of_airlines}")
 
     # Show the result on the screen
     city_airlines_df.show()
